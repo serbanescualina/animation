@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="page">
+		<div class="img1">
+			<img src="image/bab.jpg">	
+		</div>
+
+		<div class="img2 ">
+			<img src="image/broken.jpg">
+		</div>
+		<div class="overlay"></div>
+		<div class="ciocan">
+			<img src="image/ciocan.png">
+		</div>
+		<div class="btn">Hover me</div>
+	
+
+		<div class="ha-ha"> 
+			<div class="tk-breake"><img src="image/take.png"></div>
+			<div class="title"><h3>Take a breake</h3>
+			</div>
+				<div class="btn red">
+				Press me
+				</div>
+		</div>
+		<div class="animation-cleaning">
+			<div class="sp">
+				<img src="image/sponge.png">
+			</div>
+			<div class="br">
+				<img src="image/broom.gif">
+			</div>
+			<div class="man">
+				<img src="image/cleaning.gif">
+			</div>
+		</div>
+
+		<div class="img3">
+			<img src="image/hmm.gif">
+		</div>
+	</div>
+
+<script src="js/jQuerry1.7.js"></script>
+
+<script type="text/javascript">
+	$( ".btn" ).mouseover(function() {
+		$( ".overlay" ).addClass('inactive');
+		$(".ciocan").addClass('hit');
+		$('.img2').addClass('broke');
+		$('.ha-ha').addClass('scale')
+	})
+
+	$('.red').click(function(){
+		$('.ciocan').addClass('cleaning');
+		$('.img2').addClass('cleaning');
+		$('.ha-ha').addClass('cleaning');
+		$('.btn').addClass('cleaning');
+		$('.img1').addClass('cleaning');
+		$('.sp').addClass('sponge');
+		$('.br').addClass('broom');
+		$('.man').addClass('cl');
+		$('.animation-cleaning').addClass('active');
+		$('.img3').addClass('opa')
+	})
+</script>
+</body>
+</html>
